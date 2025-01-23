@@ -44,6 +44,14 @@ Getting Started
 3) Split the datasets into training, validation, and test sets using splitBalanced.py or splitUnbalanced.py.
 4) Train the model using trainingLocal.py or distributedTrainingLocal.py. On a laptop, use trainingLocal.py
 
+----
 
+Methodology
+
+----
+
+The full methodology is provided thereby; the code in this repository is associated with the workstation steps in the diagram.
+
+![image](https://github.com/user-attachments/assets/992ae748-7f48-4c21-8a7f-3c130c2e3b85)
 
 
