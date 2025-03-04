@@ -12,7 +12,7 @@ images/ Contains the images generated from IQ sample files for use in machine le
 The images provided are the ones from the third classification scenario, where we detect rusty screws inside a steel pipe.
 
 rawIQ/ Contains the raw IQ sample files, which are the foundational input data for the project. These signals are processed into meaningful features for the machine learning pipeline.
-IQ files are heavy and not provided in this repository; they must be fetched https://figshare.com/s/8f0fa4bc6f1d883cdf0a
+IQ files are heavy and not provided in this repository; they must be fetched https://figshare.com/s/8f0fa4bc6f1d883cdf0a and https://figshare.com/s/16415cff18b5663eae1c
 
 test/ Contains the dataset split for testing the trained model's performance.
 
@@ -37,6 +37,14 @@ splitUnbalanced.py Alternative dataset splitting script, designed for cases wher
 confusion_matrix.py and confusion_matrix2.py generate the confusion matrixes for the article.
 
 ----
+GNU Workflow
+----
+
+harmonic_radar.grc contain the graphical representation of signal processing flowgraphs, which GRC translates into Python scripts for execution.
+It can be used directly in GNU Radio Companion to collect data using f0=2.5GHz as a fundamental frequency (tunable). We use a USRP X310 and a HackRF for 
+the experiments, hence the UHD: USRP Source (RX) and Osmocom Sink (TX)
+
+
 Getting Started
 ----
 1) Clone the repository
@@ -50,7 +58,7 @@ Methodology
 
 ----
 
-The full methodology is provided thereby; the code in this repository is associated with the workstation steps in the diagram.
+This provides the full methodology; the code in this repository is associated with the workstation steps in the diagram.
 
 ![image](https://github.com/user-attachments/assets/992ae748-7f48-4c21-8a7f-3c130c2e3b85)
 
