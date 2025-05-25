@@ -66,10 +66,10 @@ def process_all_iq_files(base_directory='rawIQ', fft_size=1024, image_size=(224,
             save_stacked_spectra_as_images(iq_samples=iq_samples, 
                                            fft_size=fft_size, 
                                            image_size=image_size, 
-                                           num_stacks=128, 
+                                           num_stacks=256, 
                                            output_folder=output_folder)
 # Call the function to process all files
 # Provide the IQ samples directory into base_directory
 
-process_all_iq_files(base_directory=os.path.join(os.getcwd(), 'rawIQ'), 
+process_all_iq_files(base_directory=os.path.join(os.getcwd(), 'C:\GNURadio\Corrosion\Scenario 3 - Pipe'), 
                      fft_size=4096, image_size=(224, 224), output_base='images')
