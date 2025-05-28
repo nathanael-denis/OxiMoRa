@@ -8,17 +8,14 @@ Repository structure:
 Directories
 ----
 
-images/ Contains the images generated from IQ sample files for use in machine learning tasks. These images encapsulate the information needed for training, validation, and testing models.
-The images provided are the ones from the third classification scenario, where we detect rusty screws inside a steel pipe.
+images/ (Empty) Contains the images generated from IQ sample files for use in machine learning tasks. These images encapsulate the information needed for training, validation, and testing models. The images generated from iqToRichImages will be saved here.
 
 rawIQ/ Contains the raw IQ sample files, which are the foundational input data for the project. These signals are processed into meaningful features for the machine learning pipeline.
 IQ files are heavy and not provided in this repository; they must be fetched https://figshare.com/s/8f0fa4bc6f1d883cdf0a and https://figshare.com/s/16415cff18b5663eae1c
 
-test/ Contains the dataset split for testing the trained model's performance.
+results/ has the metrics for each individual round of each experiments, compiling all experimental data
 
-train/ Contains the dataset split for training the machine learning models.
-
-val/ Contains the dataset split for validating the model during training to prevent overfitting.
+output/ has a collection of images that are already generated and sorted, so that they can be used to test the whole classification pipeline (training + testing). The images are derived from IQ samples collected in the third setup --- Pipeline internal oxides. If you run either splitUnbalanced.py or splitBalanced.py, the images will be sent there, so it is better to clean this directory before this to avoid conflicts.
 
 ----
 Python scripts
